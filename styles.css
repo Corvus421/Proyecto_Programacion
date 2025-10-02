@@ -14,11 +14,11 @@ nav{
     overflow: hidden;
 }
 .img_inicio{
-    width: 100%; /*ocupa el total de ancho de la pagina*/
-    height: 100vh; /*ocupa todo el viewheigt de la pagina*/
-    overflow: hidden; /*evita desbordamientos*/
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden; 
     background-image: url(img/Biblioteca_1.jpg);
-    background-size: cover; /*ajusta la imagen al contenedor*/
+    background-size: cover;
 }
 .texto_img{
     position: relative;
@@ -205,15 +205,21 @@ nav{
     height: 1.5rem;
 }
 
+@media screen and (max-width: 1000px){
+    .ajustar_iframe.video{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 750px) {
     .img_inicio{
-        height: 95vh; /*ocupa todo el viewheigt de la pagina*/
+        height: 95vh; 
     }
     .texto_img h1{
         font-size: 4rem;
     }
     .texto_img p{
-        font-size: 0.2rem;
+        font-size: 1rem;
     }
 
     .col-md-6{
@@ -242,9 +248,4 @@ nav{
 #donde{
     padding: 0.5rem
 }
-}
-@media screen and (max-width: 1000px){
-    .ajustar_iframe.video{
-        display: none;
-    }
 }
