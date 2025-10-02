@@ -1,0 +1,250 @@
+
+.fixed-top{
+    position: unset;
+}
+.container-fluid{
+    flex-direction: row-reverse;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+}
+.div-img{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.img_inicio{
+    width: 100%; /*ocupa el total de ancho de la pagina*/
+    height: 100vh; /*ocupa todo el viewheigt de la pagina*/
+    overflow: hidden; /*evita desbordamientos*/
+    background-image: url(img/Biblioteca_1.jpg);
+    background-size: cover; /*ajusta la imagen al contenedor*/
+}
+.texto_img{
+    position: relative;
+    top: 20%;
+    text-align: center;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    background-color: rgba(218, 211, 211, 0.678);
+    padding: 2%;
+    margin-left: 1rem;
+    max-width: fit-content;
+    margin: 1rem;
+}
+.texto_img h1{
+    font-size: 10rem;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;;
+}
+.texto_img h3{
+    font-size: 3.5rem;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    letter-spacing: -0.1rem;
+}
+
+#Mision{
+    background-color: rgb(22, 66, 91);
+}
+.seccion_mision{
+    padding: 0.5rem
+}
+.seccion_mision h1{
+    text-align: center;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.seccion_mision p{
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(255, 254, 254, 0.973);
+}
+.img_mision{
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+#Material{
+    background-color: rgb(236, 229, 240);
+}
+#Material h1{
+    text-align: center;
+    padding: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.seccion_populares h1{
+    text-align: center;
+    margin: 0;
+}
+.card_seccion{
+    display: flex;
+    margin-left: 10px;
+    padding: 5px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Eventos{
+    background-color: rgb(22, 66, 91);
+}
+#Eventos h1{
+    text-align: center;
+    padding: 0.2rem;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.carousel-inner-eventos{
+    height: 80vh;
+}
+.img_carrusel{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    ;
+}
+
+
+#Representantes{
+    background-color: rgb(236, 229, 240);
+}
+#Representantes h1{
+    text-align: center;
+    padding: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#card_directivos{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card_direc{
+    width: 18rem;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.img_card_directivos{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+#donde{
+    background-color: rgb(22, 66, 91);
+}
+#donde h1{
+    text-align: center;
+    padding: 0.2rem;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ajustar_iframe{
+    display: flex;
+}
+
+#registro{
+    background-color: rgb(236, 229, 240);
+}
+#registro h1{
+    text-align: center;
+    padding: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img_registro{
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+.conteiner_registro{
+    background-color: rgb(22, 66, 91);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    width: 90%;
+    height: 19rem;
+}   
+.from-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.boton{
+    background-color: rgb(40, 116, 160);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.redes_sociales{
+    display: flex;
+    gap: 1rem;
+    justify-content:center;
+    padding: 1rem;
+    flex-direction: row;
+}
+.redes_sociales a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    .img_inicio{
+        height: 95vh; /*ocupa todo el viewheigt de la pagina*/
+    }
+    .texto_img h1{
+        font-size: 3rem;
+    }
+    .texto_img p{
+        font-size: 1rem;
+    }
+
+    .col-md-6{
+        display: contents;
+    }
+    .conteiner_registro{
+        display: flow;
+        height: 100%;
+        width: 100%;
+        margin: 10px
+    }
+
+
+    .img_registro{
+        display: none;
+    }
+
+.redes_sociales{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.1rem;
+    flex-direction: row
+}
+#donde{
+    padding: 0.5rem
+}
+}
+@media screen and (max-width: 1000px){
+    .ajustar_iframe.video{
+        display: none;
+    }
+}
